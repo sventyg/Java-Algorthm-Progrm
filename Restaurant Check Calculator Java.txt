@@ -1,0 +1,62 @@
+// Name: Griffin Blaise Sventy
+// Purpose: Restaurant Check Calculator 
+// Date completed: 10/3/2017
+
+package assignment.pkg1;
+import java.util.Scanner;
+
+import static java.lang.System.out;
+
+/**
+ *
+ * @author sventyg1
+ */
+public class Assignment1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner cin = new Scanner(System.in);
+        out.print("CPS 150 Lab 09 by Griffin Blaise Sventy\n\n");
+        out.print("Welcome to the restaurant check calculator!\n\n");
+        int num = 0;
+        int top = 20;
+        int pricedrink;
+        String name;
+        int priceapp;
+        int priceent;
+        int pricedess;
+        int total;
+        int final_tip;
+
+        out.print("Enter server's first name: ");
+        name = cin.next();
+        out.print("Enter the price of the drink: ");
+        pricedrink = cin.nextInt();
+        out.print("Enter the price of the appetizer: ");
+        priceapp =  cin.nextInt();
+        out.print("Enter the price of the entree: ");
+        priceent = cin.nextInt();
+        out.print("Enter the price of the dessert: ");         
+        pricedess = cin.nextInt();
+        out.print ("n/n/Tip suggestion");
+        total = pricedrink + priceapp + priceent + pricedess;
+        out.print("(15%): "+ .15*total + "(18%): "+ .18*total + "(20%): "+ .20*total);
+//        final_tip = price("Enter amount you wish to tip: ");
+//        while (num <= top) {
+//        	out.print("-");
+//        	num = num + 1;
+//        } // end while
+//        // TODO code application logic here
+        
+    }//end main
+    
+//    static int price(String prompt) {
+//        out.print(prompt);
+//        return cin.nextInt();
+//    } // end getInt    
+
+
+    
+}//end class
